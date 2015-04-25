@@ -2,6 +2,8 @@
 
 Copyright (C) 2015 - Frédéric Lamorce - frederic.lamorce@gmail.com
 
+This application is used to backup huge files on various medium that can be slow.
+
 ## History
 I often use VM and Truecrypt volumes to store sources, pictures, and all kind of personnal data. Backuping these huge files took a lot of time on external storage, be it external HDD, USB pendrive or even micro SD cards when I wanted to keep my 30GB TC volume with me in my netbook.
 
