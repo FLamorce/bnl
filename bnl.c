@@ -287,9 +287,10 @@ int main(int argc, char *argv[])
 				crc_block[i]=cur_crc;
 				changed=1;
 			}
-			//printf("%u%%\r", (i*100)/nb);
+			printf("%u%%\r", (i*100)/nb);
+			fflush(stdout);
 	}
-	//printf("100%%\n");
+	printf("100%%\n");
 	
 	// flush new CRC array if needed
 	if(changed)
