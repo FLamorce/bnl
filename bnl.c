@@ -274,9 +274,9 @@ int main(int argc, char *argv[])
         if(create_dest)
           printf("Creating block %05u\n", i);
         else
-          printf("Block %05u differ from %08lX, copying block\n", i, crc_block[i]);
+          printf("Block %05u is different, copying block...\n", i);
         // seek at right block position to write block
-        fseeko(fd, bs*i, SEEK_SET);
+        fseeko(fd, (off_t)bs*(off_t)i, SEEK_SET);
         fwrite(buf, 1, bufread, fd);
         if(ferror(fd))
         {
